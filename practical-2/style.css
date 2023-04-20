@@ -1,0 +1,92 @@
+.aligncenter{
+    display: flex;
+    justify-content: center;
+}
+
+
+.top{
+    background-color: lightskyblue;
+    height: 25px;
+    border: 1px solid black;
+}
+
+#logo{
+    margin-top: 20px;
+}
+
+#intro{
+    display: block;
+    width: 900px;
+    margin-left: 350px;
+}
+
+.leftpannel{
+    margin-left: 20px;
+}
+
+
+#lp1:hover{
+    color: red;
+}
+#lp2:hover{
+    color: red;
+}
+#lp3:hover{
+    color: red;
+}
+#lp4:hover{
+    color: red;
+}
+
+
+.aligncenterintro{
+    display: block;
+    width: 800px;
+
+}
+
+#compintro{
+    display: block;
+    width: 700px;
+    margin-left: 350px;
+    margin-top: -195px;
+}
+
+#hod{
+    margin-left: 1150px;
+    margin-top: -220px;
+}
+
+
+
+.btns,a{
+    color: black;
+}
+.btns,a:hover{
+    color: white;
+}
+
+
+
+.footer{
+    background-color: pink;
+    position: relative;
+    display: block;
+    height: 400px;
+}
+.footer #foot1{
+    display: block;
+    color: white;
+    margin-left: 350px;
+}
+.footer #foot2{
+    display: block;
+    color: white;
+    margin-left: 650px;
+    margin-top: -5px;
+}
+.footer #foot3{
+    display: block;
+    color: white;
+    margin-left: 950px;
+}
