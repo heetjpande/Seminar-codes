@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Employee Details!!</h1>
+        <form aciton ="" name="myForm" onsubmit="return validateForm()" method="get">
+            <div class="formdesign" id="name">
+                Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+            </div>
+
+            <div class="formdesign" id="email">
+                Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+            </div>
+
+            <div class="formdesign" id="phone">
+                Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="address">
+                Address: <input type="text" name="faddress" required><b><span class="formerror"></span></b>
+            </div>
+            
+            <div class="formdesign" id="salary">
+                Salary: <input type="number" name="fsalary" required><b><span class="formerror"></span></b>
+            </div>
+
+            <input class="but" type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
