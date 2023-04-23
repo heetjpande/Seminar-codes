@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime Number Finder</title>
+</head>
+<body>
+	<h1>Prime Number Finder</h1>
+	<form>
+		<label for="start">Starting number:</label>
+		<input type="number" id="start" name="start" required><br><br>
+		<label for="end">Ending number:</label>
+		<input type="number" id="end" name="end" required><br><br>
+		<input type="submit" value="Find Primes" onclick="findPrimes(); return false;">
+	</form>
+	<div id="result"></div>
+	<script>
+		function findPrimes() {
+			var start = parseInt(document.getElementById("start").value);
+			var end = parseInt(document.getElementById("end").value);
+			var primes = [];
+			for (var i = start; i <= end; i++) {
+				var isPrime = true;
+				for (var j = 2; j < i; j++) {
+					if (i % j === 0) {
+						isPrime = false;
+						break;
+					}
+				}
+				if (isPrime && i > 1) {
+					primes.push(i);
+				}
+			}
+			document.getElementById("result").innerHTML = "Prime numbers between " + start + " and " + end + ": " + primes.join(", ");
+		}
+	</script>
+</body>
+</html>
