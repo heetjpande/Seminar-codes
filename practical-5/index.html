@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String and Number Functions</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>String and Number Functions</h1>
+	<h2>Length of a String</h2>
+	<form>
+		<label for="str">Enter a string:</label>
+		<input type="text" id="str" name="str" required><br><br>
+		<input type="submit" value="Get Length" onclick="getLength(); return false;">
+	</form>
+	<div id="strLength"></div>
+	<h2>Reverse a Number</h2>
+	<form>
+		<label for="num">Enter a number:</label>
+		<input type="number" id="num" name="num" required><br><br>
+		<input type="submit" value="Reverse Digits" onclick="reverseDigits(); return false;">
+	</form>
+	<div id="numReverse"></div>
+	<script>
+		function getLength() {
+			var str = document.getElementById("str").value;
+			var length = str.length;
+			document.getElementById("strLength").innerHTML = "The length of the string is " + length;
+		}
+
+		function reverseDigits() {
+			var num = parseInt(document.getElementById("num").value);
+			var numStr = num.toString();
+			var reversedNumStr = "";
+			for (var i = numStr.length - 1; i >= 0; i--) {
+				reversedNumStr += numStr[i];
+			}
+			var reversedNum = parseInt(reversedNumStr);
+			document.getElementById("numReverse").innerHTML = "The number with its digits in reverse order is " + reversedNum;
+		}
+	</script>
+</body>
+</html>
